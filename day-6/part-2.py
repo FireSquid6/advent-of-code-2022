@@ -7,7 +7,7 @@ with open("./input.txt") as file:
         for i, char in enumerate(line):
             queue.insert(0, char)
 
-            if len(queue) >= 4:
+            if len(queue) >= 14:
                 no_duplicates = True
                 for item in queue:
                     if queue.count(item) > 1:
